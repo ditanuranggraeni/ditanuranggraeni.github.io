@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Greeting</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="title" id="birthday-title">🎉 Happy Birthday! 🎂</h1>
+        <p class="message" id="birthday-message"></p>
+        <div class="photo">
+            <img src="assets/dita.jpg" alt="Birthday Photo">
+        </div>
+        <div class="gif" id="hiddenGif" style="display: none">
+          <img src="assets/dancing.gif" alt="..">
+        </div>
+        <div class="audio">
+            <audio id="hbdbacksound" loop>
+                <source src="assets/hbd.mp3" type="audio/mpeg">
+            </audio>
+            <button id="playButton" class="buttonPlay">
+              <img src="assets/play.png" alt="play" width="40px" height="40px">
+            </button>
+            <button id="pauseButton" class="buttonPause">
+              <img src="assets/pause.png" alt="pause" width="40px" height="40px">
+            </button>
+        </div>
+    </div>
+    
+    <div class="new-card">
+        <p class="message" id="age"></p>
+        <h2 class="countdown-title" id="countdown-title">Countdown to Next Birthday:</h2>
+        <p id="countdown"></p>
+        <div class="gif">
+            <img src="assets/giphy.gif" alt="Gift Animation">
+        </div>
+    </div>
+    
+    <div class="confetti"></div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
